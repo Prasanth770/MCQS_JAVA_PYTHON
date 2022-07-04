@@ -1,0 +1,898 @@
+﻿50 MCQS JAVA
+1. What is the output of the following code snippet? 
+String tree = "pine"; 
+int count = 0; 
+if (tree.equals("pine")) { 
+ int height = 55; 
+ count = count + 1; 
+} 
+System.out.print(height + count); 
+A. 1 
+B. 55 
+C. 56 
+D. It does not compile. 
+
+2. Which of the following is true of a Java bytecode file? 
+A. It can be run on any computer with a compatible JVM. 
+B. It can only be executed on the same type of computer that it was created on. C. It can be easily read and modified in a standard text editor. 
+D. It requires the corresponding .java that created it to execute. 
+
+3. What is the correct character for terminating a statement in Java? A. A colon (:) 
+B. An end-of-line character 
+C. A tab character 
+D. A semicolon (;) 
+
+4. What is the result of compiling and executing the following class? 
+1: public class Tolls { 
+2: private static int yesterday = 1; 
+3: int tomorrow = 10; 
+4: public static void main(String[] args) { 
+5: Tolls tolls = new Tolls(); 
+6: int today=20, tomorrow = 40; 
+7: System.out.print(today + tolls.tomorrow + tolls.yesterday); 8: } 
+9: } 
+A. The code does not compile due to line 6. 
+B. The code does not compile due to line 7. 
+C. 31 
+D. 61 
+
+
+5. Given the following class definition, which is the only line that does not contain a  compilation error? 
+1: public ThisClassDoesNotCompile { 
+2: double int count; 
+3: void errors() {} 
+4: static void private limit; } 
+A. Line 1 
+B. Line 2 
+C. Line 3 
+D. Line 4 
+
+6. Which of the following features allows a Java class to be run on a wide variety of computers  and devices? 
+A. Encapsulation 
+B. Object oriented 
+C. Inheritance 
+D. Platform independence 
+
+7. Which of the following is not a property of a JVM? 
+A. It prevents Java bytecode from being easily decoded/decompiled. 
+B. It supports platform independence. 
+C. It manages memory for the application. 
+D. It translates Java instructions to machine instructions
+. 
+8. Which of the following variables are always in scope for the entire program? A. Package variables 
+B. Class variables 
+C. Instance variables 
+D. Local variables 
+
+9. Given the following wildcard import statements, which class would be included in the  import? 
+import television.actor.*; 
+import movie.director.*; 
+A. television.actor.recurring.Marie 
+B. movie.directors.John 
+C. television.actor.Package 
+D. movie.NewRelease 
+
+
+10. Which is the correct order of statements for a Java class file? 
+A. import statements, package statement, class declaration 
+B. package statement, class declaration, import statement 
+C. class declaration, import statements, package declaration 
+D. package statement, import statements, class declaration 
+
+11. Given the following class definition, what is the maximum number of import statements  that can be discarded and still have the code compile? For this question, assume that the  Blackhole class is defined only in the stars package. 
+package planetarium; 
+import java.lang.*; 
+import stars.*; 
+import java.lang.Object; 
+import stars.Blackhole; 
+public class Observer { 
+ public void find(Blackhole blackhole) {} 
+} 
+A. Zero 
+B. One 
+C. Two 
+D. Three 
+
+12. Given the following class definition, which command will cause the application to output  the message White-tailed? 
+package forest; 
+public class Deer { 
+ public static void main(String... deerParams) { 
+ System.out.print(theInput[2]); 
+ } 
+} 
+A. java forest.Deer deer 5 "White-tailed deer" 
+B. java forest.Deer "White-tailed deer" deer 3 
+C. java forest.Deer Red deer White-tailed deer 
+D. java forest.Deer My "deer White-tailed" 
+
+13. Which of the following is a true statement? 
+A. The java command compiles a .java file into a .class file. 
+B. The javac command compiles a .java file into a .class file. 
+C. The java command compiles a .class file into a .java file. 
+D. The javac command compiles a .class file into a .java file. 
+
+
+14. Which of the following statements about Java is true? 
+A. Java is a procedural programming language. 
+B. Java allows method overloading. 
+C. Java allows operator overloading. 
+D. Java allows direct access to objects in memory. 
+
+15. Given the following code, what values inserted in order into the blank lines, allow the code  to compile? 
+ agent; 
+public Banker { 
+ private static getMaxWithdrawal() { 
+ return 10; 
+ } 
+} 
+A. import, class, null 
+B. import, interface, void 
+C. package, int, int 
+D. package, class, long 
+
+16. What is the output of the following application? 
+public class Airplane { 
+ static int start = 2; 
+ final int end; 
+ public Airplane(int x) { 
+ x = 4; 
+ end = x; 
+ } 
+ public void fly(int distance) { 
+ System.out.print(end-start+" "); 
+ System.out.print(distance); 
+ } 
+ public static void main(String... start) { 
+ new Airplane(10).fly(5); 
+ } 
+} 
+A. 2 5 
+B. 8 5 
+C. 6 5 
+D. The code does not compile. 
+
+
+17. What is the result of compiling and executing the following class? 
+package sports; 
+public class Bicycle { 
+ String color = "red"; 
+ private void printColor(String color) { 
+ color = "purple"; 
+ System.out.print(color); 
+ } 
+ public static void main(String[] rider) { 
+ new Bicycle().printColor("blue"); 
+ } 
+} 
+A. red 
+B. purple 
+C. blue 
+D. It does not compile. 
+
+18. Which statements about calling the compilation command javac and the execution com mand java are true? 
+ I. java may use a period . to separate packages. 
+ II. javac takes a .java file and returns a .class file. 
+III. java may use a slash (/) to separate packages. 
+A. I only 
+B. II only 
+C. I and II 
+D. I, II, and III 
+
+19. What is the result of compiling and executing the following application? 
+package forecast; 
+public class Weather { 
+ private static boolean heatWave = true; 
+ public static void main() { 
+ boolean heatWave = false; 
+ System.out.print(heatWave); 
+ } 
+} 
+A. true 
+B. false 
+C. It does not compile. 
+D. It compiles but throws an error at runtime. 
+
+20. Given the following class diagram, which Java implementation most closely matches this  structure? 
+Book 
++ numberOfPages 
++ getRating() 
+A. public class Book { 
+ public int numOfPages; 
+B. public class Book { 
+ public String getRating() {return null;} } 
+C. public class Book { 
+ public int numberOfPages; 
+ public String getRating() {return null;} } 
+D. public class Book { 
+ void numberOfPages; } 
+
+21. Which statement about the JVM is true? 
+A. The JVM schedules garbage collection on a predictable schedule. 
+B. The JVM ensures that the application will always terminate. 
+C. The JVM requires a properly defined entry point method to execute the application. 
+D. A Java compiled code can be run on any computer. 
+
+22. Which of the following declarations does not compile? 
+A. double num1, int num2 = 0; 
+B. int num1, num2; 
+C. int num1, num2 = 0; 
+D. int num1 = 0, num2 = 0; 
+
+23. What is the output of the following? 
+public static void main(String... args) { 
+ String chair, table = "metal"; 
+ chair = chair + table; 
+ System.out.println(chair); 
+} 
+A. metal 
+B. metalmetal 
+C. nullmetal 
+D. The code does not compile. 
+
+24. Which is correct about an instance variable of type String? A. It defaults to an empty string. 
+B. It defaults to null. 
+C. It does not have a default value. 
+D. It will not compile without initializing on the declaration line. 
+
+25. Which of the following is not a valid variable name? 
+A. _blue 
+B. 2blue 
+C. blue$ 
+D. Blue 
+
+26. Which of these class names best follows standard Java naming conventions? A. fooBar 
+B. FooBar 
+C. FOO_BAR 
+D. F_o_o_B_a_r 
+
+27. How many of the following methods compile? 
+public String convert(int value) { 
+  return value.toString(); 
+} 
+public String convert(Integer value) { 
+  return value.toString(); 
+} 
+public String convert(Object value) { 
+  return value.toString(); 
+} 
+A. None 
+B. One 
+C. Two 
+D. Three 
+
+28. Which of the following does not compile? 
+A. int num = 999; 
+B. int num = 9_9_9; 
+C. int num = _9_99; 
+D. None of the above; they all compile. 
+
+29. Which of the following is a wrapper class? 
+A. int 
+B. Int 
+C. Integer 
+D. Object 
+
+30. What is the result of running this code? 
+public class Values { 
+ integer a = Integer.valueOf("1"); 
+ public static void main(String[] nums) { 
+ integer a = Integer.valueOf("2"); 
+ integer b = Integer.valueOf("3"); 
+ System.out.println(a + b); 
+ } 
+} 
+A. 4 
+B. 5 
+C. The code does not compile. 
+D. The code compiles but throws an exception at runtime. 
+
+31. Which best describes what the new keyword does? 
+A. Creates a copy of an existing object and treats it as a new one 
+B. Creates a new primitive 
+C. Instantiates a new object 
+D. Switches an object reference to a new one 
+
+
+32. Which is the first line to trigger a compiler error? 
+double d1 = 5f; // p1 
+double d2 = 5.0; // p2 
+float f1 = 5f; // p3 
+float f2 = 5.0; // p4 
+A. p1 
+B. p2 
+C. p3 
+D. p4 
+
+33. Which of the following lists of primitive types are presented in order from smallest to  largest data type? 
+A. byte, char, float, double 
+B. byte, char, double, float 
+C. char, byte, float, double 
+D. char, double, float, bigint 
+
+34. Which of the following is not a valid order for elements in a class? A. Constructor, instance variables, method names 
+B. Instance variables, constructor, method names 
+C. Method names, instance variables, constructor 
+D. None of the above: all orders are valid. 
+
+35. Which of the following lines contains a compiler error? 
+String title = "Weather"; // line x1 
+int hot, double cold; // line x2 
+System.out.println(hot + " " + title); // line x3 
+A. x1 
+B. x2 
+C. x3 
+D. None of the above 
+
+36. How many instance initializers are in this code? 
+1: public class Bowling { 
+2: { System.out.println(); } 
+3: public Bowling () { 
+4: System.out.println(); 
+5: } 
+6: static { System.out.println(); } 
+
+
+7: { System.out.println(); } 
+8: } 
+A. None 
+B. One 
+C. Two 
+D. Three 
+
+
+
+
+37. Of the types double, int, and short, how many could fill in the blank to have this code  output 0? 
+public static void main(String[] args) { 
+ defaultValue; 
+ System.out.println(defaultValue); 
+} 
+A. None 
+B. One 
+C. Two 
+D. Three 
+
+38. What is true of the finalize() method? 
+A. It may be called zero or one times. 
+B. It may be called zero or more times. 
+C. It will be called exactly once. 
+D. It may be called one or more times. 
+
+39. Which of the following is not a wrapper class? 
+A. Double 
+B. Integer 
+C. Long 
+D. String 
+
+40. Which type can fill in the blank? 
+ pi = 3.14; 
+A. byte 
+B. float 
+C. double 
+D. short 
+
+
+41. What is the first line in the following code to not compile? 
+public static void main(String[] args) { 
+ int Integer = 0; // k1 
+ Integer int = 0; // k2 
+ Integer ++; // k3 
+ int++; // k4 
+} 
+A. k1 
+B. k2 
+C. k3 
+D. k4 
+
+42. Suppose foo is a reference to an instance of a class. Which of the following is not true  about foo.bar? 
+A. bar is an instance variable. 
+B. bar is a local variable. 
+C. It can be used to read from bar. 
+D. It can be used to write to bar. 
+
+43. Which of the following is not a valid class declaration? 
+A. class building {} 
+B. class Cost$ {} 
+C. class 5MainSt {} 
+D. class _Outside {} 
+
+
+44. Fill in the blank to make the code compile: 
+package animal; 
+public class Cat { 
+ public String name; 
+ public static void main(String[] meow) { 
+ Cat cat = new Cat(); 
+ = "Sadie"; 
+ } 
+} 
+A. cat.name 
+B. cat-name 
+C. cat.setName 
+D. cat[name] 
+
+45. Which of the following variable types is not permitted in a switch statement? A. String 
+B. double 
+C. int 
+D. char 
+
+46. What is the value of tip after executing the following code snippet? 
+int meal = 5; 
+int tip = 2; 
+int total = meal + (meal>6 ? ++tip : --tip); 
+A. 1 
+B. 2 
+C. 3 
+D. 6 
+
+
+47. What is the output of the following application? 
+package registration; 
+public class NameCheck { 
+ public static void main(String... data) { 
+ String john = "john"; 
+ String jon = new String(john); 
+ System.out.print((john==jon)+" "+(john.equals(jon)));  } 
+} 
+A. true true 
+B. true false 
+C. false true 
+D. false false 
+
+48. What is the output of the following application? 
+package planning; 
+public class ThePlan { 
+ public static void main(String[] input) { 
+ int plan = 1; 
+ plan = plan++ + --plan; 
+ if(plan==1) { 
+ System.out.print("Plan A"); 
+ } else { if(plan==2) System.out.print("Plan B");  } else System.out.print("Plan C"); 
+ } 
+}
+A. Plan A 
+B. Plan B 
+C. Plan C 
+D. None of the above 
+
+49. Which of the following statements about a default branch in a switch statement is  correct? 
+A. All switch statements must include a default statement. 
+B. The default statement is required to be placed after all case statements. 
+C. Unlike a case statement, the default statement does not take a value. 
+D. A default statement can only be used when at least one case statement is present. 
+
+50. What is the value of thatNumber after the execution of the following code snippet? 
+long thatNumber = 5 >= 5 ? 1+2 : 1*1; 
+if(++thatNumber < 4) 
+ thatNumber += 1; 
+A. 3 
+B. 4 
+C. 5 
+D. The answer cannot be determined until runtime. 
+
+51. Which statement immediately exits a switch statement, skipping all remaining case or  default branches? 
+A. exit 
+B. break 
+C. goto 
+D. continue 
+
+
+
+
+
+
+
+
+
+
+                      50 MCQS PYTHON
+
+
+1. Identify the invalid keyword below.
+a. and
+b. as
+c. while
+d. Until
+
+
+2. is an identifier that has predefined meaning.
+a. variable
+b. identifier
+c. keyword
+d. None of these
+
+
+3. Guess the output of the following code. 1 > 2 and 9 > 6
+a. True
+b. False
+c. Machine Dependent
+d. Error
+
+
+4. How many operands are there in the following arithmetic expression? 6 * 35 + 8 − 25
+a. 4
+b. 3
+c. 5
+d. 8
+
+
+
+
+
+
+5. How many binary operators are there in the following arithmetic expression?
+− 6 + 10 / (23 + 56)
+
+
+
+
+a. 2
+b. 3
+c. 4
+d. 5
+
+
+6. Which operator returns the remainder of the operands?
+a. /
+b. //
+c. %
+d. **
+
+
+7. Multiline comments can be done by adding on each end of the comment.
+a. “‘ “‘(triple quote)
+b. # (Hash)
+c. $ (dollar)
+d. % (modulus)
+
+
+8. Python programs get structured through .
+a. Alignment
+b. Indentation
+c. Justification
+d. None
+
+
+9. Which of the following is correct about Python?
+a. Python is a high-level, interpreted, interactive and object-oriented language.
+b. Python is designed to be highly readable.
+c. It uses English keywords frequently and has fewer syntactical constructions.
+d. All of the above.
+
+
+10. The one’s complement of 60 is given by . a. −61
+b. −60
+c. −59
+d. +59
+
+
+
+
+
+
+11. control statement repeatedly executes a set of statements.
+a. Iterative
+b. Conditional
+c. Multi-way
+d. All of these
+
+
+
+
+12. Predict the output of the following code.
+i = 1
+while True:
+if i%2 == 0:
+break
+print(i)
+i += 1
+
+
+a. 1
+b. 12
+c. 123
+d. None of these
+
+
+13. The symbol that is placed at the end of if condition is
+a. ;
+b. :
+c. &
+d. ~
+
+
+14. What is the keyword that is used to come out of a loop only for that iteration?
+a. break
+b. return
+c. continue
+d. If
+
+
+15. Predict the output of the following code snippet. while True:
+print(True) break
+a. True
+b. False
+c. None
+d. Syntax error
+
+
+16. When will the else part of the try-except-else be executed?
+a. Always
+b. When an exception occurs
+c. When no exception occurs
+d. When an exception occurs in a try block
+
+
+17. The keyword that is not used as an exception handling in Python?
+a. try
+b. except
+c. accept
+d. Finally
+
+
+18. The keyword that is used to define the block of statements in function?
+a. function
+b. func
+c. def
+d. Pi
+
+
+19. Functions without a return statement do return a value and it is
+a. int
+b. null
+c. None
+d. Error
+
+
+20. The number of arguments that can be passed to a function is
+a. 0
+b. 1
+c. 0 or more
+d. 1 or more
+
+
+21. The command that is used to install a third-party module in Python is
+a. pip
+b. pipe
+c. install_module
+d. Pypy
+
+
+
+
+
+
+22. What is the output of the following code snippet? print(“Sunday”.find(“day”))
+a. 6
+b. 5
+c. 3
+d. 1
+
+
+23. The output of the following code is, print(“apple is a fruit”.split(“is”)
+a. [‘is a fruit’]
+b. [fruit]
+c. [‘apple’, ‘a fruit’]
+d. [‘apple’]
+
+
+24. What is the output of the following code? “tweet”[2:]
+a. We
+b. wee
+c. eet
+d. Twee
+
+
+25. What is the output of the following code? “apple is a fruit”[7:10]
+a. Apple
+b. s a
+c. Fruit
+d. None of the above
+
+
+26.Assume the list superstore is [1,2,3,4,5], which of the following is correct syntax for slicing operation?
+a. print(superstore[0:])
+b. print(superstore[:2])
+c. print(superstore[:-2])
+d. All of these
+
+
+
+
+
+
+
+
+27. If zoo = [“lion”, “tiger”], what will be zoo * 2?
+a. [‘lion’]
+b. [‘lion’, ‘lion’, ‘tiger’, ‘tiger’]
+c. [‘lion’, ‘tiger’, ‘lion’, ‘tiger’]
+d. [‘tiger’]
+
+
+28. To add a new element to a list the statement used is?
+a. zoo. add(5)
+b. zoo.append(“snake”)
+c. zoo.addLast(5)
+d. zoo.addend(4)
+
+
+29. To insert the string “snake” to the third position in zoo, which of the following statement is used?
+a. zoo.insert(3, “snake”)
+b. zoo. insert(2, “snake”)
+c. zoo.add(3, “snake”)
+d. zoo.append(3, “snake”)
+
+
+30. Read the code shown below carefully and pick out the keys. dic = {“game”:40, “thrones”:45}
+a. “game”, 40, 45, and “thrones”
+b. “game” and “thrones”
+c. 40 and 45
+d. dic = (40: “game”, 45: “thrones”)
+
+
+31. Gauge the output of the following code snippet. fruit = {“apple”:”red”, “guava”:”green”} “apple” in fruit
+a. True
+b. False
+c. None
+d. Error
+32. Consider phone_book = {“Kalpana”:7766554433, “Steffi”:4499551100}. To delete the key “Kalpana” the code used is
+a. phone_book.delete(“Kalpana”:7766554433)
+b. phone_book.delete(“Kalpana”)
+c. del phone_book[“Kalpana”]
+d. del phone_book(“Kalpana”:7766554433)
+
+
+33. The method that returns the value for the key present in the dictionary and if the key is not present then it inserts the key with default value into the dictionary.
+a. update()
+b. fromkeys()
+c. setdefault()
+d. get()
+
+
+34. What will be the output of the following code? t1 = (1, 2, 3, 4)
+t1.append((5, 6, 7)) print(len(t1))
+a. Error
+b. 2
+c. 1
+d. 5
+
+
+35. What is the correct syntax for creating a tuple? 
+a. [“a”,”b”,”c”]
+b. (“a”,”b”,”c”)
+c. {“a”,”b”,”c”}
+d. {}
+
+
+36. Assume air_force = (“f15”, “f22a”, “f35a”). Which of the following is incorrect?
+a. print(air_force[2])
+b. air_force[2] = 42
+c. print(max(air_force))
+d. print(len(air_force))
+37. Consider a file named rome.txt, then the statement used to open a file for reading, we use
+a. infile = open(“c:\rome.txt”, “r”)
+b. infile = open(“c:\\rome.txt”, “r”)
+c. infile = open(file = “c:\rome.txt”, “r”)
+d. infile = open(file = “c:\\rome.txt”, “r”)
+
+
+38. Suppose there is a file named rome.txt, then the statement used to open a file for writing, we use
+a. outfile = open(“c:\rome.txt”, “w”)
+b. outfile = open(“c:\\rome.txt”, “w”)
+c. outfile = open(file = “c:\rome.txt”, “w”)
+d. outfile = open(file = “c:\\rome.txt”, “w”)
+
+
+39. Presume a file named rome.txt, then the statement used for appending data is
+a. outfile = open(“c:\rome.txt”, “a”)
+b. outfile = open(“c:\\rome.txt”, “rw”)
+c. outfile = open(file = “c:\rome.txt”, “w”)
+d. outfile = open(file = “c:\\rome.txt”, “w”)
+
+
+40. Which of the following statements are true?
+a. When you open a file for reading in ‘r’ mode, if the file does not exist, an error occurs
+b. When you open a file for writing in ‘w’ mode, if the file does not exist, a new file is created
+c. When you open a file for writing in ‘w’ mode, if the file exists, the existing file is overwritten with the new file
+d. All of the mentioned
+
+
+
+
+
+
+
+
+
+
+41. The code snippet to read two characters from a file object infile is
+a. infile.read(2)
+b. infile.read()
+c. infile.readline()
+d. infile.readlines()
+
+
+42. If you want to read the entire contents of the file using file object infile then
+a. infile.read(2)
+b. infile.read()
+c. infile.readline()
+d. infile.readlines()
+43. Predict the output of the following code: for i in range(5):
+with open(“data.txt”, “w”) as f: if i > 0:
+break print(f.closed)
+a. True
+b. False
+c. None
+d. Error
+
+
+44. The syntax to write to a CSV file is
+a. CSV.DictWriter(filehandler)
+b. CSV.reader(filehandler)
+c. CSV.writer(filehandler)
+d. CSV.write(filehandler)
+
+
+45. Which of the following is not a valid mode to open a file
+a. ab
+b. r+
+c. w+
+d. Rw
+
+
+
+
+
+
+46. The readline() method returns
+a. str
+b. a list of lines
+c. a list of single characters
+d. a list of integers
+
+
+47. Which of the following is not a valid attribute of the file object file_handler
+a. file_handler.size
+b. file_handler.name
+c. file_handler.closed
+d. File_handler.mode
+
+
+48. Chose a keyword that is not an attribute of a file.
+a. closed
+b. softspace
+c. rename
+d. mode
+49. The functionality of tell() method in Python is
+a. tells you the current position within the file
+b. tells you the end position within the file
+c. tells you the file is opened or not
+d. None of the above
+
+
+50. The syntax for renaming of a file is
+a. rename(current_file_name, new_file_name)
+b. rename(new_file_name, current_file_name,)
+c. rename(()(current_file_name, new_file_name))
+d. None of the above
+
+
+
+
+
+
+
+
+51. To remove a file, the syntax used is,
+a. remove(file_name)
+b. (new_file_name, current_file_name,)
+c. remove((), file_name))
+d. None of the above
+
+
+52. An absolute path name begins at the
+a. leaf
+b. stem
+c. root
+d. current directory
